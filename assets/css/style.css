@@ -289,7 +289,7 @@ main {
 .active-link::before {
     content: '';
     position: absolute;
-    bottom: -.4rem;
+    bottom: -.2rem;
     width: 20px;
     height: 3px;
     background-color: var(--first-color);
