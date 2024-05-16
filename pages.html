@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelRents</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <head>
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+      </head>
+    
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="" class="nav__logo"><span class="nav__point">100</span><i class='bx bx-joystick' style="font-size: 22px"></i></a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home nav__icon'></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#catalog" class="nav__link">
+                            <i class='bx bx-food-menu nav__icon'></i>
+                            <span class="nav__name">Catalog</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#history" class="nav__link">
+                            <i class='bx bx-receipt nav__icon'></i>
+                            <span class="nav__name">History</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <img src="assets/img/profile.jpeg" alt="" class="nav__img"> -->
+        </nav>
+        <nav class="tabs">
+            <div class="tab tab-active">Rent</div>
+            <div class="tab">Buy</div>
+        </nav>
+    </header>
+    <!-- <header class="header" id="header2">
+            
+    </header> -->
+    <main>
+        <section class="section">
+            <ul class="section__filter">
+                <li class="filter__item filter-active">PS 3</li>
+                <li class="filter__item">PS 4</li>
+                <li class="filter__item">PS 5</li>
+            </ul>
+        </section>
+        <div class="section__card">
+            <div class="card__item">
+                <div class="card__header">
+                    <div class="card__title">Basic PixelRents</div>
+                    <div class="card__point"><span style="margin-right: 2px">3 </span> <i class='bx bx-joystick' style="font-size: 21px"></i></div>
+                </div>
+                <div class="card__price">Rp. 20.000</div>
+                <div class="card__benefits">
+                    <ul>
+                        <li class="card__list"><i class='bx bx-chevron-right'></i> PS 3</li>
+                    </ul>
+                </div>
+                <div class="card__footer">
+                    <div class="card__time">
+                        <i class='bx bx-stopwatch' style='color:#464646; font-size: 22px;' ></i>
+                        <input class="card__inputtime" type="number" min="1" step="1"> Jam
+                    </div>
+                    <div class="card__button">
+                        <button class="btn__checkout">Check Out</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card__item">
+                <div class="card__header">
+                    <div class="card__title">Special PixelRents</div>
+                    <div class="card__point"><span style="margin-right: 2px">8 </span> <i class='bx bx-joystick' style="font-size: 21px"></i></div>
+                </div>
+                <div class="card__price">Rp. 40.000</div>
+                <div class="card__benefits">
+                    <ul>
+                        <li class="card__list"><i class='bx bx-chevron-right'></i> PS 3</li>
+                        <li class="card__list"><i class='bx bx-chevron-right'></i> Food (AQUA 2 + LAYS 2)</li>
+                    </ul>
+                </div>
+                <div class="card__footer">
+                    <div class="card__time">
+                        <i class='bx bx-stopwatch' style='color:#464646; font-size: 22px;' ></i>
+                        <input class="card__inputtime" type="number" min="1" step="1"> Jam
+                    </div>
+                    <div class="card__button">
+                        <button class="btn__checkout">Check Out</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card__item">
+                <div class="card__header">
+                    <div class="card__title">Super PixelRents</div>
+                    <div class="card__point"><span style="margin-right: 2px">10 </span> <i class='bx bx-joystick' style="font-size: 21px"></i></div>
+                </div>
+                <div class="card__price">Rp. 20.000</div>
+                <div class="card__benefits">
+                    <ul>
+                        <li class="card__list"><i class='bx bx-chevron-right'></i> PS 3</li>
+                        <li class="card__list"><i class='bx bx-chevron-right'></i> Food (AQUA 2 + LAYS 2 + POP MIE 2)</li>
+                        <li class="card__list"><i class='bx bx-chevron-right'></i> Netflix</li>
+                    </ul>
+                </div> 
+                <div class="card__footer">
+                    <div class="card__time">
+                        <i class='bx bx-stopwatch' style='color:#464646; font-size: 22px;' ></i>
+                        <input class="card__inputtime" type="number" min="1" step="1"> Jam
+                    </div>
+                    <div class="card__button">
+                        <button class="btn__checkout">Check Out</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/boxicons-master/dist/boxicons.js"></script>
+</body>
+</html>
