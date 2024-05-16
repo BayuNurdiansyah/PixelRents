@@ -1,8 +1,5 @@
 // ===================== Click Active Menu =============================== //
-// Get all the <a> tags inside the nav__list
 const navLinks = document.querySelectorAll('.nav__list .nav__link');
-console.log(navLinks)
-// Loop through each <a> tag and add an event listener
 navLinks.forEach(link => {
     link.addEventListener('click', function() {
         // Remove the active-link class from all links
@@ -54,16 +51,31 @@ filterList.forEach(filter => {
     });
 })
 
-// window.addEventListener('scroll', function() {
-//     var headerHeight = document.querySelector('header').offsetHeight;
-//     var section = document.getElementById('.section');
-//     var scrollPosition = window.scrollY;
+// limit input jam sewa
+let inputs = document.querySelectorAll(".card__inputtime");
+inputs.forEach(function(input) {
+    input.addEventListener("input", function() {
+        let hours = this.value;
+        if (isNaN(hours)) {
+            console.log("Input is not a valid number");
+            input.textContent = 0;
+        } else {
+            hours = parseInt(hours);
+            if (hours > 23) {
+                alert("Melebihi jam maksimal sewa, bisa mengganti dengan sewa paket harian.")
+                input.value = 0;
+            }
+        }
+    });
+});
 
-//     if (scrollPosition >= headerHeight) {
-//         section.style.position = 'fixed';
-//         section.style.top = headerHeight + 'px';
-//     } else {
-//         section.style.position = 'relative';
-//         section.style.top = '0';
-//     }
-// });
+// select catalog when open pages.html
+var currentURL = window.location.href;
+let homeLink = document.getElementById("catalog-link");
+
+if (currentURL.includes("pages.html")) {
+    navLinks.forEach(link => {
+        link.classList.remove('active-link');
+    });
+    homeLink.classList.add('active-link');
+}
