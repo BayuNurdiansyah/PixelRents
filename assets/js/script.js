@@ -1,5 +1,5 @@
 const baseurl = window.location.origin;
-console.log(baseurl);
+
 // ===================== Click Active Menu =============================== //
 const navLinks = document.querySelectorAll('.nav__list .nav__link');
 navLinks.forEach(link => {
